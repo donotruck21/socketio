@@ -3,6 +3,10 @@ Open up your command line, navigate to your Desktop, and run the following comma
 
 `git clone https://github.com/donotruck21/socketio.git`
 
+Open your cloned folder in a text editor (Atom, Sublime, etc) and open up the file called **package.json**. Your application's dependencies (as well as some other metadata) live here. To actually install the dependencies listed, run the following command:
+
+`npm install`
+
 ## Configuring Our Server
 Our first step is to install socket.io. Since socket.io is just a node module we will install it using npm install.
 
