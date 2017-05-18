@@ -6,7 +6,8 @@ Now let's configure the server side:
 
 Open up your server.js file and add the following right after you instantiate your server variable
 
-`// this selects our port and listens
+```
+// this selects our port and listens
 // note that we're now storing our app.listen within
 // a variable called server. this is important!!
 var server = app.listen(8000, function() {
@@ -23,14 +24,15 @@ io.sockets.on('connection', function (socket) {
   console.log("WE ARE USING SOCKETS!");
   console.log(socket.id);
   //all the socket code goes in here!
-})`
+})
+```
 
 
 Perfect! Now we've got all the server side code configured.  Within the io.sockets.on() callback, we will put all of our code for anything socket-related! Easy huh?
 Configuring the client:
 Configuring the client is much easier.  Let's assume the app we're going to build is a single-page application, so we only need to serve one view, which will be served by the root route (app.get('/')...etc ).  To connect via socket connection, make your index.ejs look like this (note: the HTML syntax highlighting might be a little off.  Look closely for syntax!!):
 
-`<html>
+```<html>
 <head>
 <title></title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -47,7 +49,8 @@ Configuring the client is much easier.  Let's assume the app we're going to buil
     <button>I AM A BUTTON!</button>
     <!-- web page goes here -->
 </body>
-</html>`
+</html>
+```
 
 So, we did a couple of things here:
 
