@@ -15,6 +15,6 @@ app.get('/', function(req, res) {
 })
 
 // tell the express app to listen on port 8000
-app.listen(8000, function() {
+var server = app.listen(8000, function() {
  console.log("listening on port 8000");
 })
