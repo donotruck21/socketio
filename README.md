@@ -49,7 +49,7 @@ Configuring the client is much easier.  Let's assume the app we're going to buil
 ```<html>
 <head>
 <title></title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
     <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
     <script type ="text/javascript">
         $(document).ready(function (){
